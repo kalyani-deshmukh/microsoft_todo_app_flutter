@@ -12,7 +12,7 @@ class RootScreen extends StatelessWidget {
               children: <Widget>[
               //User profile
               ProfileWidget(),
-              Divider(color: Colors.grey),
+              //Divider(color: Colors.grey),
               Expanded (
                 flex: 8,
                 child: TodoWidget()

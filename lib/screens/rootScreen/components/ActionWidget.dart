@@ -6,29 +6,31 @@ class ActionWidget extends StatelessWidget {
     return  Row(
       children: <Widget>[
         Container(
-          padding: EdgeInsets.all(0),
-          margin: EdgeInsets.only(bottom: 30),
+          //padding: EdgeInsets.all(0),
+          margin: EdgeInsets.only(bottom: 10),
           child: IconButton(
-            padding: EdgeInsets.only(top: 0),
-            icon: Icon(Icons.search, size: 33, color: Colors.white),
+            //padding: EdgeInsets.only(top: 0),
+            icon: Icon(Icons.search_outlined, size: 40, color: Colors.black),
             tooltip: 'Search',
             onPressed: () {
               Navigator.pushNamed(context, 'searchRoute');
             }
           )
-        ),   
+        ), 
+         /* 
         Container(
           padding: EdgeInsets.all(0),
           margin: EdgeInsets.only(bottom: 30),
           child: IconButton(
             padding: EdgeInsets.only(top: 0),
-            icon: Icon(Icons.settings, size: 33, color: Colors.white),
+            icon: Icon(Icons.settings, size: 33, color: Colors.black),
             tooltip: 'Settings',
             onPressed: () {
               Navigator.pushNamed(context, 'settingsRoute');
             }
           )
         )    
+        */
       ],
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.start,

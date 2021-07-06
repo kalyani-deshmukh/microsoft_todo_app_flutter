@@ -13,16 +13,16 @@ class TodoListWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  ListTile(
-      leading:  Icon(this.icon, color: Colors.white),
-      title:  Text(this.title, style: TextStyle( fontSize: 15, color: Colors.white)),
-      trailing:  Text(this.trailing, style: TextStyle(color: Colors.white)),
+      leading:  Icon(this.icon, color: Colors.black),
+      title:  Text(this.title, style: TextStyle( fontSize: 15,fontWeight: FontWeight.bold, color: Colors.black)),
+      trailing:  Text(this.trailing, style: TextStyle(color: Colors.black)),
       contentPadding: EdgeInsets.only(right: 15, left: 15),
       dense: true,
       onTap: () {
         Navigator.pushNamed(
           context,
           'todoListRoute',
-          arguments: TodoListRouteArguments('Ideas', true)
+          arguments: TodoListRouteArguments('Untitled Task', true)
         );
       }
     );

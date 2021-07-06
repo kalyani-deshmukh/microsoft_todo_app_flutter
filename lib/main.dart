@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:to_do/screens/rootScreen/RootScreen.dart';
-//import 'package:microsoft_todo/screens/searchScreen/SearchScreen.dart';
+import 'package:to_do/screens/searchScreen/SearchScreen.dart';
 //import 'package:microsoft_todo/screens/todoListScreen/TodoListScreen.dart';
 //import 'package:microsoft_todo/screens/settingsScreen/SettingsScreen.dart';
 
@@ -16,7 +16,7 @@ class RootApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => RootScreen(),
-        //'searchRoute': (context) => SearchScreen(),
+        'searchRoute': (context) => SearchScreen(),
         //'todoListRoute': (context) => TodoListScreen(),
         //'settingsRoute': (context) => SettingsScreen()
       },   
