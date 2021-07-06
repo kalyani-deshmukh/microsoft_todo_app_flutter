@@ -6,7 +6,7 @@ class RootScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.black,
+        backgroundColor: Colors.white,
         body: SafeArea(
           child: Column(
               children: <Widget>[
@@ -24,12 +24,12 @@ class RootScreen extends StatelessWidget {
                   children: <Widget>[
                     Row(
                       children: <Widget>[
-                        Container(margin: EdgeInsets.only(right: 10), child: Icon(Icons.add, color: Colors.white)),
-                        Text('New list', style: TextStyle(fontSize: 15, color: Colors.white))
+                        Container(margin: EdgeInsets.only(right: 10), child: Icon(Icons.add, color: Colors.black)),
+                        Text('New list', style: TextStyle(fontSize: 15, color: Colors.black))
                       ]
                     ),
                     IconButton(
-                      icon: Icon(Icons.add_to_photos, color: Colors.white),
+                      icon: Icon(Icons.add_to_photos, color: Colors.black),
                       onPressed: (() {})
                     )
                   ]
