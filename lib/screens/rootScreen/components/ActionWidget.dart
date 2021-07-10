@@ -10,7 +10,7 @@ class ActionWidget extends StatelessWidget {
           margin: EdgeInsets.only(bottom: 10),
           child: IconButton(
             //padding: EdgeInsets.only(top: 0),
-            icon: Icon(Icons.search_outlined, size: 40, color: Colors.black),
+            icon: Icon(Icons.search_outlined, size: 40, color: Colors.indigoAccent[700],),
             tooltip: 'Search',
             onPressed: () {
               Navigator.pushNamed(context, 'searchRoute');

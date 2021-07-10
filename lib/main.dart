@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:to_do/screens/loginScreen.dart';
 import 'package:to_do/screens/rootScreen/RootScreen.dart';
 import 'package:to_do/screens/searchScreen/SearchScreen.dart';
-//import 'package:microsoft_todo/screens/todoListScreen/TodoListScreen.dart';
-//import 'package:microsoft_todo/screens/settingsScreen/SettingsScreen.dart';
+import 'package:to_do/utils/routes.dart';
+//import 'package:to_do/screens/todoListScreen/TodoListScreen.dart';
+//import 'package:to_do/screens/settingsScreen/SettingsScreen.dart';
 
 void main() => runApp( RootApp());
 
@@ -15,8 +17,15 @@ class RootApp extends StatelessWidget {
       title: 'To-Do',
       initialRoute: '/',
       routes: {
-        '/': (context) => RootScreen(),
-        'searchRoute': (context) => SearchScreen(),
+        '/': (context) => LoginPage(),
+        MyRouts.loginRoute: (context) => LoginPage(),
+        MyRouts.rootRoute: (context) => RootScreen(),
+        MyRouts.searchRoute: (context) => SearchScreen(),
+
+
+        //'loginRoute': (context)=> LoginPage(),
+        //'RootRoute': (context) =>RootScreen(),
+        //'searchRoute': (context) => SearchScreen(),
         //'todoListRoute': (context) => TodoListScreen(),
         //'settingsRoute': (context) => SettingsScreen()
       },   
