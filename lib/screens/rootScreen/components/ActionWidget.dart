@@ -17,20 +17,6 @@ class ActionWidget extends StatelessWidget {
             }
           )
         ), 
-         /* 
-        Container(
-          padding: EdgeInsets.all(0),
-          margin: EdgeInsets.only(bottom: 30),
-          child: IconButton(
-            padding: EdgeInsets.only(top: 0),
-            icon: Icon(Icons.settings, size: 33, color: Colors.black),
-            tooltip: 'Settings',
-            onPressed: () {
-              Navigator.pushNamed(context, 'settingsRoute');
-            }
-          )
-        )    
-        */
       ],
       mainAxisSize: MainAxisSize.max,
       crossAxisAlignment: CrossAxisAlignment.start,
