@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:to_do/main.dart';
+import 'package:to_do/widget/myday.dart';
 
 class TodoListWidget extends StatelessWidget {
 
@@ -19,11 +19,17 @@ class TodoListWidget extends StatelessWidget {
       contentPadding: EdgeInsets.only(right: 15, left: 15),
       dense: true,
       onTap: () {
+        /*
         Navigator.pushNamed(
           context,
           'todoListRoute',
           arguments: TodoListRouteArguments('Untitled Task', true)
-        );
+          */
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => MyDay()),
+  );
+
       }
     );
   }
