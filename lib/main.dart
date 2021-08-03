@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:to_do/screens/loginScreen.dart';
 import 'package:to_do/screens/rootScreen/RootScreen.dart';
 import 'package:to_do/screens/searchScreen/SearchScreen.dart';
@@ -6,7 +7,7 @@ import 'package:to_do/utils/routes.dart';
 import 'package:to_do/widget/myday.dart';
 
 
-void main() => runApp( RootApp());
+void main() => runApp(ProviderScope(child: RootApp()));
 
 class RootApp extends StatelessWidget {
   @override
